@@ -1,15 +1,25 @@
 #include "../source_development_kit/source_development_kit.hh"
 
-void start_hack()
+unsigned long __stdcall start_hack(_In_ LPVOID reserved)
 {
-	MessageBox(NULL, "cum_daddy", "niggers_lynched.dll", MB_OK);
+	console->attach("debug");
+
+	console->log("hack loaded");
+
+	while (!GetAsyncKeyState(VK_DELETE))
+		std::this_thread::sleep_for(std::chrono::milliseconds(200));
+
+	console->detach();
+
+	FreeLibraryAndExitThread(reinterpret_cast<HMODULE>(reserved), 0);
 }
 
-// copyright_microsoft_2019 (developer.microsoft.com/en-us/windows) (((not my code)))
-BOOL WINAPI DllMain(_In_ HINSTANCE hinstDLL, _In_ DWORD fdwReason, _In_ LPVOID lpvReserved)
+BOOL WINAPI DllMain(_In_ HINSTANCE instance, _In_ DWORD reason, _In_ LPVOID reserved)
 {
-	switch (fdwReason)
+	switch (reason)
 	{
-		case DLL_PROCESS_ATTACH: start_hack(); break;
+		case DLL_PROCESS_ATTACH:  CreateThread(0, 0, start_hack, instance, 0, 0); break;
 	}
+
+	return TRUE;
 }
