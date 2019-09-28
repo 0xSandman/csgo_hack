@@ -30,6 +30,9 @@
     <ClCompile Include="source_development_kit\hooking\hooking.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source_development_kit\memory\memory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source_development_kit\source_development_kit.hh">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source_development_kit\hooking\hooking.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\memory\memory.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -133,12 +133,14 @@
     <ClCompile Include="entry_point\entry_point.cc" />
     <ClCompile Include="source_development_kit\hooking\hooking.cc" />
     <ClCompile Include="source_development_kit\interfaces\interfaces.cc" />
+    <ClCompile Include="source_development_kit\memory\memory.cc" />
     <ClCompile Include="source_development_kit\utilities\utilities.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="console\console.hh" />
     <ClInclude Include="source_development_kit\hooking\hooking.hh" />
     <ClInclude Include="source_development_kit\interfaces\interfaces.hh" />
+    <ClInclude Include="source_development_kit\memory\memory.hh" />
     <ClInclude Include="source_development_kit\source_development_kit.hh" />
     <ClInclude Include="source_development_kit\utilities\utilities.hh" />
     <ClInclude Include="source_development_kit\valve\c_client.hh" />
