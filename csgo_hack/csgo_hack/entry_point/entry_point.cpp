@@ -10,6 +10,6 @@ BOOL WINAPI DllMain(_In_ HINSTANCE hinstDLL, _In_ DWORD fdwReason, _In_ LPVOID l
 {
 	switch (fdwReason)
 	{
-	case DLL_PROCESS_ATTACH: start_hack(); break;
+		case DLL_PROCESS_ATTACH: start_hack(); break;
 	}
 }
