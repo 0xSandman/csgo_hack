@@ -129,10 +129,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="entry_point\entry_point.cpp" />
+    <ClCompile Include="entry_point\entry_point.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source_development_kit\source_development_kit.h" />
+    <ClInclude Include="source_development_kit\source_development_kit.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
