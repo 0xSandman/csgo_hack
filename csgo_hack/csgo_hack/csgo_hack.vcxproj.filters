@@ -21,12 +21,24 @@
     <ClCompile Include="console\console.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source_development_kit\interfaces\interfaces.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source_development_kit\utilities\utilities.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source_development_kit\source_development_kit.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="console\console.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\interfaces\interfaces.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\utilities\utilities.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

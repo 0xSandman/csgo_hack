@@ -21,5 +21,5 @@ void c_console::detach()
 
 void c_console::log(std::string message)
 {
-	printf_s(message.c_str());
+	printf_s("%s\n", message.c_str());
 }

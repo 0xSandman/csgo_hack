@@ -3,7 +3,7 @@
 unsigned long __stdcall start_hack(_In_ LPVOID reserved)
 {
 	console->attach("debug");
-
+	interfaces::setup();
 	console->log("hack loaded");
 
 	while (!GetAsyncKeyState(VK_DELETE))
