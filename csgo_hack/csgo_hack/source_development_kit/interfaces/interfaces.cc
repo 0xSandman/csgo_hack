@@ -2,7 +2,7 @@
 
 void* interfaces::client = nullptr;
 
-void interfaces::setup()
+void interfaces::setup( )
 {
-	interfaces::client = reinterpret_cast<void*>(utilties::get_interface("client_panorama.dll", "VClient018"));
+	interfaces::client = reinterpret_cast< void* >( utilties::get_interface( "client_panorama.dll", "VClient018" ) );
 }
