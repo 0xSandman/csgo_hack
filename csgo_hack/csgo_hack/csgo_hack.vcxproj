@@ -139,6 +139,8 @@
     <ClInclude Include="source_development_kit\interfaces\interfaces.hh" />
     <ClInclude Include="source_development_kit\source_development_kit.hh" />
     <ClInclude Include="source_development_kit\utilities\utilities.hh" />
+    <ClInclude Include="source_development_kit\valve\c_client.h" />
+    <ClInclude Include="source_development_kit\valve\recv.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

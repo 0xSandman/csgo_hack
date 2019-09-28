@@ -3,4 +3,10 @@ typedef void* (*create_interface_fn)(const char* name, int* return_code); /// ht
 namespace utilties
 {
 	void* get_interface(const char* module, const char* interface_name);
+
+	template <typename T>
+	T get_virtual_function( void* address, int index )
+	{
+		return ( *reinterpret_cast< T * * >( address ) )[ index ];
+	}
 }

@@ -1,5 +1,5 @@
 namespace interfaces
 {
 	void setup();
-	extern void* client;
+	extern valve::client_class* client;
 }

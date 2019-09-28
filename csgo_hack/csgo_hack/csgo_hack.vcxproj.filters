@@ -41,5 +41,11 @@
     <ClInclude Include="source_development_kit\utilities\utilities.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source_development_kit\valve\c_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\valve\recv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
