@@ -141,7 +141,7 @@
     <ClCompile Include="console\console.cc" />
     <ClCompile Include="entry_point\entry_point.cc" />
     <ClCompile Include="hooks\hooks.cc" />
-    <ClCompile Include="render\fonts\fonts.cpp" />
+    <ClCompile Include="render\fonts\fonts.cc" />
     <ClCompile Include="render\render.cc" />
     <ClCompile Include="source_development_kit\hooking\hooking.cc" />
     <ClCompile Include="source_development_kit\interfaces\interfaces.cc" />
@@ -151,11 +151,11 @@
   <ItemGroup>
     <ClInclude Include="console\console.hh" />
     <ClInclude Include="hooks\hooks.hh" />
-    <ClInclude Include="render\fonts\fonts.h" />
+    <ClInclude Include="render\fonts\fonts.hh" />
     <ClInclude Include="render\render.hh" />
     <ClInclude Include="source_development_kit\hooking\hooking.hh" />
     <ClInclude Include="source_development_kit\interfaces\interfaces.hh" />
-    <ClInclude Include="source_development_kit\math\vector\vector2d.h" />
+    <ClInclude Include="source_development_kit\math\vector\vector2d.hh" />
     <ClInclude Include="source_development_kit\memory\memory.hh" />
     <ClInclude Include="source_development_kit\source_development_kit.hh" />
     <ClInclude Include="source_development_kit\utilities\utilities.hh" />

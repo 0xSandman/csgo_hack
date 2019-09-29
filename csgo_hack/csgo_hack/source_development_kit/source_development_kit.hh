@@ -8,8 +8,8 @@
 
 
 #include "../console/console.hh"
-#include "../source_development_kit/math/vector/vector2d.h"
-#include "../render/fonts/fonts.h"
+#include "../source_development_kit/math/vector/vector2d.hh"
+#include "../render/fonts/fonts.hh"
 #include "../render/render.hh"
 #include "../source_development_kit/utilities/utilities.hh"
 #include "../source_development_kit/valve/recv.hh"

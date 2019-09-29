@@ -39,7 +39,7 @@
     <ClCompile Include="render\render.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="render\fonts\fonts.cpp">
+    <ClCompile Include="render\fonts\fonts.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,10 +77,10 @@
     <ClInclude Include="render\render.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="source_development_kit\math\vector\vector2d.h">
+    <ClInclude Include="render\fonts\fonts.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="render\fonts\fonts.h">
+    <ClInclude Include="source_development_kit\math\vector\vector2d.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
