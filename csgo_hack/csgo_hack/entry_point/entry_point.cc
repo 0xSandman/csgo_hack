@@ -3,12 +3,16 @@
 unsigned long __stdcall start_hack( _In_ LPVOID reserved )
 {
 	console->attach( "debug" );
+	console->log("[ hack ] init", 5);
 	interfaces::setup( );
-	console->log( "hack loaded" );
+	hooks::setup();
+	console->log("[ hack ] loaded", 5);
 
 	while ( !GetAsyncKeyState( VK_DELETE ) )
 		std::this_thread::sleep_for( std::chrono::milliseconds( 200 ) );
 
+	hooks::free();
+	fonts::release();
 	console->detach( );
 
 	FreeLibraryAndExitThread( reinterpret_cast< HMODULE >( reserved ), 0 );

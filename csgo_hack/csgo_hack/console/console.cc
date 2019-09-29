@@ -10,6 +10,10 @@ void c_console::attach( std::string window_title )
 
 	if ( window_title != "" )
 		SetConsoleTitle( window_title.c_str( ) );
+
+	/// set default color
+	HANDLE console_handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(console_handle, 7);
 }
 
 void c_console::detach( )
@@ -19,7 +23,13 @@ void c_console::detach( )
 	FreeConsole( );
 }
 
-void c_console::log( std::string message )
+void c_console::log( std::string message, int color )
 {
+	HANDLE console_handle = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	bool change_color = color != 0;
+
+	if(change_color) SetConsoleTextAttribute(console_handle, color);
 	printf_s( "%s\n", message.c_str( ) );
+	if (change_color) SetConsoleTextAttribute(console_handle, 7);
 }

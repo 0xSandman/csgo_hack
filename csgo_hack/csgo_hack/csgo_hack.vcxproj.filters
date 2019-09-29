@@ -33,6 +33,15 @@
     <ClCompile Include="source_development_kit\memory\memory.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hooks\hooks.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render\render.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render\fonts\fonts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source_development_kit\source_development_kit.hh">
@@ -57,6 +66,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source_development_kit\memory\memory.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\valve\iv_engine_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\hooks.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render\render.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\math\vector\vector2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render\fonts\fonts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
