@@ -42,6 +42,18 @@
     <ClCompile Include="render\fonts\fonts.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="netvar_manager\netvar_manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="silentgui\silentgui.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="silentgui\controls\groupbox\groupbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="silentgui\controls\window\window.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source_development_kit\source_development_kit.hh">
@@ -81,6 +93,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source_development_kit\math\vector\vector2d.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="netvar_manager\netvar_manager.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="silentgui\silentgui.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="silentgui\controls\checkbox\checkbox.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="silentgui\controls\groupbox\groupbox.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="silentgui\controls\window\window.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -141,8 +141,12 @@
     <ClCompile Include="console\console.cc" />
     <ClCompile Include="entry_point\entry_point.cc" />
     <ClCompile Include="hooks\hooks.cc" />
+    <ClCompile Include="netvar_manager\netvar_manager.cc" />
     <ClCompile Include="render\fonts\fonts.cc" />
     <ClCompile Include="render\render.cc" />
+    <ClCompile Include="silentgui\controls\groupbox\groupbox.cpp" />
+    <ClCompile Include="silentgui\controls\window\window.cc" />
+    <ClCompile Include="silentgui\silentgui.cc" />
     <ClCompile Include="source_development_kit\hooking\hooking.cc" />
     <ClCompile Include="source_development_kit\interfaces\interfaces.cc" />
     <ClCompile Include="source_development_kit\memory\memory.cc" />
@@ -151,8 +155,13 @@
   <ItemGroup>
     <ClInclude Include="console\console.hh" />
     <ClInclude Include="hooks\hooks.hh" />
+    <ClInclude Include="netvar_manager\netvar_manager.hh" />
     <ClInclude Include="render\fonts\fonts.hh" />
     <ClInclude Include="render\render.hh" />
+    <ClInclude Include="silentgui\controls\checkbox\checkbox.hh" />
+    <ClInclude Include="silentgui\controls\groupbox\groupbox.hh" />
+    <ClInclude Include="silentgui\controls\window\window.hh" />
+    <ClInclude Include="silentgui\silentgui.hh" />
     <ClInclude Include="source_development_kit\hooking\hooking.hh" />
     <ClInclude Include="source_development_kit\interfaces\interfaces.hh" />
     <ClInclude Include="source_development_kit\math\vector\vector2d.hh" />
