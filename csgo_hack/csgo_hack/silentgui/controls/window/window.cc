@@ -21,7 +21,7 @@ c_window::c_window(std::string name, vec2_t* position, vec2_t size)
 
 void c_window::add_groupbox(c_groupbox* groupbox)
 {
-	
+	//
 }
 
 void c_window::draw()
