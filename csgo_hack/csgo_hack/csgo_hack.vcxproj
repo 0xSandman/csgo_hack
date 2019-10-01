@@ -140,9 +140,10 @@
   <ItemGroup>
     <ClCompile Include="console\console.cc" />
     <ClCompile Include="entry_point\entry_point.cc" />
-    <ClCompile Include="hooking\hooks\endscene.cc" />
-    <ClCompile Include="hooking\hooks\wndproc.cc" />
-    <ClCompile Include="hooking\hook_manager.cc" />
+    <ClCompile Include="hook_manager\hooks\endscene.cc" />
+    <ClCompile Include="hook_manager\hooks\lockcursor.cc" />
+    <ClCompile Include="hook_manager\hooks\wndproc.cc" />
+    <ClCompile Include="hook_manager\hook_manager.cc" />
     <ClCompile Include="netvar_manager\netvar_manager.cc" />
     <ClCompile Include="render\fonts\fonts.cc" />
     <ClCompile Include="render\render.cc" />
@@ -157,7 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="console\console.hh" />
-    <ClInclude Include="hooking\hook_manager.hh" />
+    <ClInclude Include="hook_manager\hook_manager.hh" />
     <ClInclude Include="netvar_manager\netvar_manager.hh" />
     <ClInclude Include="render\fonts\fonts.hh" />
     <ClInclude Include="render\render.hh" />
@@ -173,7 +174,9 @@
     <ClInclude Include="source_development_kit\source_development_kit.hh" />
     <ClInclude Include="source_development_kit\utilities\utilities.hh" />
     <ClInclude Include="source_development_kit\valve\c_client.hh" />
-    <ClInclude Include="source_development_kit\valve\iv_engine_client.h" />
+    <ClInclude Include="source_development_kit\valve\iv_engine_client.hh" />
+    <ClInclude Include="source_development_kit\valve\i_input_system.hh" />
+    <ClInclude Include="source_development_kit\valve\i_surface.hh" />
     <ClInclude Include="source_development_kit\valve\recv.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

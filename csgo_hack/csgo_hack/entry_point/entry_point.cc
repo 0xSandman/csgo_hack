@@ -11,8 +11,12 @@ unsigned long __stdcall start_hack( _In_ LPVOID reserved )
 	while ( !GetAsyncKeyState( VK_DELETE ) )
 		std::this_thread::sleep_for( std::chrono::milliseconds( 200 ) );
 
+	interfaces::input_system->enable_input(true);
+	console->log("[ unload ] enabled input", 5);
 	hooks::free();
+	console->log("[ unload ] freed hooks", 5);
 	fonts::release();
+	console->log("[ unload ] released fonts", 5);
 	console->detach( );
 
 	FreeLibraryAndExitThread( reinterpret_cast< HMODULE >( reserved ), 0 );

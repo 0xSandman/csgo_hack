@@ -48,19 +48,22 @@
     <ClCompile Include="silentgui\controls\groupbox\groupbox.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hooking\hook_manager.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="source_development_kit\hooker\hooker.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hooking\hooks\endscene.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="hooking\hooks\wndproc.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="silentgui\menu_helpers\menu_helpers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_manager\hooks\endscene.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_manager\hooks\wndproc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_manager\hook_manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_manager\hooks\lockcursor.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -84,9 +87,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source_development_kit\memory\memory.hh">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source_development_kit\valve\iv_engine_client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="render\render.hh">
@@ -113,13 +113,22 @@
     <ClInclude Include="silentgui\controls\window\window.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="hooking\hook_manager.hh">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="source_development_kit\hooker\hooker.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="silentgui\menu_helpers\menu_helpers.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\valve\iv_engine_client.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\valve\i_surface.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source_development_kit\valve\i_input_system.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hook_manager\hook_manager.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

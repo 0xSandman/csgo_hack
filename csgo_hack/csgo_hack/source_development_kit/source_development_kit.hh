@@ -9,7 +9,6 @@
 #include <d3d9.h>
 #include <d3dx9.h>
 
-
 #include "../console/console.hh"
 #include "../source_development_kit/math/vector/vector2d.hh"
 #include "../render/fonts/fonts.hh"
@@ -18,10 +17,12 @@
 #include "../source_development_kit/valve/recv.hh"
 #include "../netvar_manager/netvar_manager.hh"
 #include "../source_development_kit/valve/c_client.hh"
-#include "../source_development_kit/valve/iv_engine_client.h"
+#include "../source_development_kit/valve/iv_engine_client.hh"
+#include "../source_development_kit/valve/i_input_system.hh"
+#include "../source_development_kit/valve/i_surface.hh"
 #include "../source_development_kit/interfaces/interfaces.hh"
 #include "../source_development_kit/hooker/hooker.hh"
 #include "../source_development_kit/memory/memory.hh"
-#include "../hooking/hook_manager.hh"
+#include "../hook_manager/hook_manager.hh"
 #include "../silentgui/menu_helpers/menu_helpers.hh"
 #include "../silentgui/silentgui.hh"
