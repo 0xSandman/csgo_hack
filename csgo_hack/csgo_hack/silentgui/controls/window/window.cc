@@ -71,10 +71,6 @@ void c_window::handle_tabs()
 	}
 }
 
-/*
-
-*/
-
 void c_window::handle_position()
 {
 	static bool drag = false;
