@@ -13,6 +13,7 @@ public:
 	void add_groupbox(c_groupbox* groupbox);
 	vec2_t* window_position;
 	std::vector<std::string> window_tabs;
+	int* selected_tab;
 private:
 	void draw();
 	void run();
@@ -20,5 +21,4 @@ private:
 	void handle_position();
 	std::string name;
 	vec2_t size;
-	int* selected_tab;
 };

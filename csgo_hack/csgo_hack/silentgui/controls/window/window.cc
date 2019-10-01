@@ -23,10 +23,12 @@ c_window::c_window(std::string name, vec2_t* position, vec2_t size, std::vector<
 
 void c_window::add_groupbox(c_groupbox* groupbox)
 {
-	if (groupbox->tab == *this->selected_tab)
+	groupbox->visible = groupbox->tab == *this->selected_tab;
+
+	if (groupbox->visible)
 	{
 		groupbox->position += *this->window_position;
-		groupbox->draw();
+		groupbox->run();
 	}
 }
 

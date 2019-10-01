@@ -11,6 +11,10 @@ vec2_t window_position = vec2_t(800, 200);
 std::vector<std::string> tabs = { "Aimbot", "Visuals", "Misc" };
 int main_window_selected_tab;
 
+bool test_bool;
+bool test_bool2;
+bool test_bool3;
+
 void c_silentgui::run()
 {
 	if (GetAsyncKeyState(VK_INSERT) & 1)
@@ -28,6 +32,9 @@ void c_silentgui::run()
 		auto groupbox = new c_groupbox("Groupbox", vec2_t(30, 80), vec2_t(300, 100), 0);
 		{
 			window->add_groupbox(groupbox);
+			groupbox->add_control(new c_checkbox("Checkbox", &test_bool));
+			groupbox->add_control(new c_checkbox("Checkbox 2", &test_bool2));
+			groupbox->add_control(new c_checkbox("Checkbox 3", &test_bool3));
 		}
 	}
 }

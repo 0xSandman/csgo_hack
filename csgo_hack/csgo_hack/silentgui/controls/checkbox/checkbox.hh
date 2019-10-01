@@ -8,6 +8,8 @@ class c_checkbox : public c_groupbox
 public:
 	c_checkbox();
 	c_checkbox(std::string name, bool* value);
+	void run();
+	vec2_t position;
 private:
 	std::string name;
 	bool* value;
