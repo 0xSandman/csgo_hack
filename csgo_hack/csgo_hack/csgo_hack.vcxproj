@@ -147,6 +147,7 @@
     <ClCompile Include="netvar_manager\netvar_manager.cc" />
     <ClCompile Include="render\fonts\fonts.cc" />
     <ClCompile Include="render\render.cc" />
+    <ClCompile Include="silentgui\controls\checkbox\checkbox.cc" />
     <ClCompile Include="silentgui\controls\groupbox\groupbox.cc" />
     <ClCompile Include="silentgui\controls\window\window.cc" />
     <ClCompile Include="silentgui\menu_helpers\menu_helpers.cc" />

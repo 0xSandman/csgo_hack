@@ -3,6 +3,8 @@
 /////////// Developed by pSilent ///////////
 ////////////////////////////////////////////
 
+class c_checkbox;
+
 class c_groupbox : public c_window
 {
 public:

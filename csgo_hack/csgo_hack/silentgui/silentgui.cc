@@ -7,6 +7,7 @@
 
 c_silentgui* silentgui;
 
+vec2_t window_position = vec2_t(800, 200);
 std::vector<std::string> tabs = { "Aimbot", "Visuals", "Misc" };
 int main_window_selected_tab;
 
@@ -22,7 +23,7 @@ void c_silentgui::run()
 	if (!menu_helpers::menu_open)
 		return;
 
-	auto window = new c_window("xyo (its pronounced 'ze-oh' not 'ex-why-oh' retards)", &vec2_t(800, 200), vec2_t(500, 350), tabs, &main_window_selected_tab);
+	auto window = new c_window("xyo (its pronounced 'ze-oh' not 'ex-why-oh' retards)", &window_position, vec2_t(500, 350), tabs, &main_window_selected_tab);
 	{
 		auto groupbox = new c_groupbox("Groupbox", vec2_t(30, 80), vec2_t(300, 100), 0);
 		{

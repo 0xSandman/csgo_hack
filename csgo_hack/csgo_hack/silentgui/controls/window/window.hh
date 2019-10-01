@@ -17,6 +17,7 @@ private:
 	void draw();
 	void run();
 	void handle_tabs();
+	void handle_position();
 	std::string name;
 	vec2_t size;
 	int* selected_tab;

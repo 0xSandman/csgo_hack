@@ -5,6 +5,7 @@
 
 #include "controls/window/window.hh"
 #include "controls/groupbox/groupbox.hh"
+#include "controls/checkbox/checkbox.hh"
 
 class c_silentgui
 {

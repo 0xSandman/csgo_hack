@@ -6,6 +6,7 @@ unsigned long __stdcall start_hack( _In_ LPVOID reserved )
 	console->log("[ hack ] init", 5);
 	interfaces::setup( );
 	hooks::setup();
+	interfaces::input_system->enable_input(!menu_helpers::menu_open);
 	console->log("[ hack ] loaded", 5);
 
 	while ( !GetAsyncKeyState( VK_DELETE ) )

@@ -38,11 +38,12 @@ void c_window::draw()
 	render->outline(this->window_position->x, this->window_position->y, this->size.x, this->size.y, D3DCOLOR_RGBA(0, 0, 0, 255));
 	render->outline(this->window_position->x + 7, this->window_position->y + 21, this->size.x - 14, this->size.y - 28, D3DCOLOR_RGBA(0, 0, 0, 255));
 	render->outline(this->window_position->x + 7, this->window_position->y + 46, this->size.x - 14, this->size.y - 53, D3DCOLOR_RGBA(0, 0, 0, 255));
-	render->text(this->window_position->x + (this->size.x / 2), this->window_position->y + 2, fonts::main_font, this->name, D3DCOLOR_RGBA(255, 255, 255, 255), true);
+	render->text(this->window_position->x + (this->size.x / 2), this->window_position->y + 3, fonts::main_font, this->name, D3DCOLOR_RGBA(255, 255, 255, 255), true);
 }
 
 void c_window::run()
 {
+	this->handle_position();
 	this->draw();
 	this->handle_tabs();
 }
@@ -67,5 +68,28 @@ void c_window::handle_tabs()
 			render->outline(tab_position.left, tab_position.top, tab_position.right, tab_position.bottom, D3DCOLOR_RGBA(0, 0, 0, 255));
 			render->text(tab_position.left + (tab_position.right / 2), tab_position.top + 7, fonts::main_font, this->window_tabs[i], D3DCOLOR_RGBA(255, 255, 255, 255), true);
 		}
+	}
+}
+
+/*
+
+*/
+
+void c_window::handle_position()
+{
+	static bool drag = false;
+	static vec2_t drag_offset;
+	auto delta = menu_helpers::mouse_position - drag_offset;
+
+	if (drag && !GetAsyncKeyState(VK_LBUTTON))
+		drag = false;
+
+	if (drag && GetAsyncKeyState(VK_LBUTTON))
+		* this->window_position = delta;
+
+	if (menu_helpers::mouse_is_over_point(vec2_t(this->window_position->x, this->window_position->y), vec2_t(this->size.x, 20)))
+	{
+		drag = true;
+		drag_offset = menu_helpers::mouse_position - *this->window_position;
 	}
 }
