@@ -53,3 +53,14 @@ void c_groupbox::add_control(c_slider* slider)
 		menu_helpers::control_index++;
 	}
 }
+
+void c_groupbox::add_control(c_combobox* combobox)
+{
+	if (this->visible)
+	{
+		combobox->position = vec2_t(this->control_offset_x, this->control_offset_y);
+		combobox->run();
+		this->control_offset_y += 20;
+		menu_helpers::control_index++;
+	}
+}

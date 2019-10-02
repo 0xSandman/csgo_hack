@@ -22,6 +22,9 @@ bool test_bool4;
 
 float test_float = 15;
 
+int test_int;
+int test_int2;
+
 void c_silentgui::handle_vector_drawing()
 {
 	for (int i = 0; i < rectangles_to_draw.size(); i++)
@@ -38,6 +41,10 @@ void c_silentgui::handle_vector_drawing()
 	{
 		render->outline(outlines_to_draw[i].x, outlines_to_draw[i].y, outlines_to_draw[i].w, outlines_to_draw[i].h, outlines_to_draw[i].color);
 	}
+
+	rectangles_to_draw.clear();
+	text_to_draw.clear();
+	outlines_to_draw.clear();
 }
 
 void c_silentgui::run()
@@ -56,7 +63,7 @@ void c_silentgui::run()
 
 	menu_helpers::control_index = 0;
 
-	auto window = new c_window("xyo (its pronounced 'ze-oh' not 'ex-why-oh' retards)", &window_position, vec2_t(500, 350), tabs, &main_window_selected_tab);
+	auto window = new c_window("xyo (hex editing this is a federal crime, punishable by firing squad)", &window_position, vec2_t(500, 350), tabs, &main_window_selected_tab);
 	{
 		auto groupbox = new c_groupbox("Groupbox", vec2_t(30, 80), vec2_t(300, 150), 0);
 		{
@@ -66,9 +73,11 @@ void c_silentgui::run()
 			groupbox->add_control(new c_checkbox("Checkbox 3", &test_bool3));
 			groupbox->add_control(new c_slider("Slider", &test_float));
 			groupbox->add_control(new c_checkbox("Checkbox 4", &test_bool4));
-
+			groupbox->add_control(new c_combobox("Combobox", &test_int, {"Item 1", "Item 2", "Item 3"}));
+			groupbox->add_control(new c_combobox("Combobox 2", &test_int2, { "Item 1", "Item 2", "Item 3" }));
 		}
 	}
 
 	this->handle_vector_drawing();
+
 }

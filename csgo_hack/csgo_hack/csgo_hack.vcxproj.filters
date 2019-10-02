@@ -72,6 +72,9 @@
     <ClCompile Include="silentgui\controls\slider\slider.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="silentgui\controls\combobox\combobox.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source_development_kit\source_development_kit.hh">
@@ -138,6 +141,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="silentgui\controls\slider\slider.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="silentgui\controls\combobox\combobox.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

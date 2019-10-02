@@ -7,6 +7,7 @@
 #include "controls/groupbox/groupbox.hh"
 #include "controls/checkbox/checkbox.hh"
 #include "controls/slider/slider.hh"
+#include "controls/combobox/combobox.hh"
 
 class c_silentgui
 {
@@ -26,6 +27,7 @@ struct rectangle_draw_t
 		this->y = y;
 		this->w = w;
 		this->h = h;
+		this->color = color;
 	}
 
 	float x; 
@@ -67,6 +69,7 @@ struct outline_draw_t
 		this->y = y;
 		this->w = w;
 		this->h = h;
+		this->color = color;
 	}
 
 	float x;

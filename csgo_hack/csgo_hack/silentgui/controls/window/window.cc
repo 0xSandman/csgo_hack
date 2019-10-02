@@ -60,7 +60,7 @@ void c_window::handle_tabs()
 		{
 			RECT tab_position = { this->window_position->x + 7 + (i * tab_size), this->window_position->y + 21, tab_size,  26 };
 
-			if (menu_helpers::mouse_is_over_point(vec2_t(tab_position.left, tab_position.top), vec2_t(tab_position.right, tab_position.bottom)) && GetAsyncKeyState(VK_LBUTTON) & 1)
+			if (menu_helpers::mouse_is_over_point(vec2_t(tab_position.left, tab_position.top), vec2_t(tab_position.right, tab_position.bottom)) && menu_helpers::key_was_pressed(VK_LBUTTON))
 				*this->selected_tab = i;
 				
 
