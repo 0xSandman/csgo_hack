@@ -39,5 +39,17 @@ void c_groupbox::add_control(c_checkbox* checkbox)
 		checkbox->position = vec2_t(this->control_offset_x, this->control_offset_y);
 		checkbox->run();
 		this->control_offset_y += 20;
+		menu_helpers::control_index++;
+	}
+}
+
+void c_groupbox::add_control(c_slider* slider)
+{
+	if (this->visible)
+	{
+		slider->position = vec2_t(this->control_offset_x, this->control_offset_y);
+		slider->run();
+		this->control_offset_y += 17;
+		menu_helpers::control_index++;
 	}
 }

@@ -1,3 +1,8 @@
+////////////////////////////////////////////
+//////////// Silent GUI v0.1   /////////////
+/////////// Developed by pSilent ///////////
+////////////////////////////////////////////
+
 #include "../../../source_development_kit/source_development_kit.hh"
 
 c_checkbox::c_checkbox()
@@ -21,7 +26,7 @@ void c_checkbox::run()
 
 	if (*this->value)
 	{
-		render->rectangle(this->position.x + 2, this->position.y + 2, 10, 10, D3DCOLOR_RGBA(255, 255, 255, 255)); // too lazy to do a checkmark for now
-		render->outline(this->position.x + 2, this->position.y + 2, 10, 10, D3DCOLOR_RGBA(255, 255, 255, 255)); // refer to c1
+		render->rectangle(this->position.x + 2, this->position.y + 2, 10, 10, D3DCOLOR_RGBA(200, 200, 200, 255)); // too lazy to do a checkmark for now
+		render->outline(this->position.x + 2, this->position.y + 2, 10, 10, D3DCOLOR_RGBA(200, 200, 200, 255)); // refer to c1
 	}
 }

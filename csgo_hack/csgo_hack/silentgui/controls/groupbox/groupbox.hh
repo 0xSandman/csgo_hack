@@ -4,6 +4,7 @@
 ////////////////////////////////////////////
 
 class c_checkbox;
+class c_slider;
 
 class c_groupbox : public c_window
 {
@@ -13,6 +14,7 @@ public:
 	void run();
 
 	void add_control(c_checkbox* checkbox);
+	void add_control(c_slider* slider);
 
 	std::string name;
 	vec2_t position;
