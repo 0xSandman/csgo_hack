@@ -7,6 +7,10 @@
 
 c_silentgui* silentgui;
 
+std::vector<rectangle_draw_t> rectangles_to_draw;
+std::vector<text_draw_t> text_to_draw;
+std::vector<outline_draw_t> outlines_to_draw;
+
 vec2_t window_position = vec2_t(800, 200);
 std::vector<std::string> tabs = { "Aimbot", "Visuals", "Misc" };
 int main_window_selected_tab;
@@ -17,6 +21,24 @@ bool test_bool3;
 bool test_bool4;
 
 float test_float = 15;
+
+void c_silentgui::handle_vector_drawing()
+{
+	for (int i = 0; i < rectangles_to_draw.size(); i++)
+	{
+		render->rectangle(rectangles_to_draw[i].x, rectangles_to_draw[i].y, rectangles_to_draw[i].w, rectangles_to_draw[i].h, rectangles_to_draw[i].color);
+	}
+
+	for (int i = 0; i < text_to_draw.size(); i++)
+	{
+		render->text(text_to_draw[i].x, text_to_draw[i].y, text_to_draw[i].font, text_to_draw[i].text, text_to_draw[i].color, text_to_draw[i].centered, text_to_draw[i].drop_shadow, text_to_draw[i].shadow_color);;
+	}
+
+	for (int i = 0; i < outlines_to_draw.size(); i++)
+	{
+		render->outline(outlines_to_draw[i].x, outlines_to_draw[i].y, outlines_to_draw[i].w, outlines_to_draw[i].h, outlines_to_draw[i].color);
+	}
+}
 
 void c_silentgui::run()
 {
@@ -47,4 +69,6 @@ void c_silentgui::run()
 
 		}
 	}
+
+	this->handle_vector_drawing();
 }
