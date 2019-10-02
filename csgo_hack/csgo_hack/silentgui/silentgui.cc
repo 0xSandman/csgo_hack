@@ -25,6 +25,10 @@ float test_float = 15;
 int test_int;
 int test_int2;
 
+bool test_multi;
+bool test_multi2;
+bool test_multi3;
+
 void c_silentgui::handle_vector_drawing()
 {
 	for (int i = 0; i < rectangles_to_draw.size(); i++)
@@ -65,7 +69,7 @@ void c_silentgui::run()
 
 	auto window = new c_window("xyo (hex editing this is a federal crime, punishable by firing squad)", &window_position, vec2_t(500, 350), tabs, &main_window_selected_tab);
 	{
-		auto groupbox = new c_groupbox("Groupbox", vec2_t(30, 80), vec2_t(300, 150), 0);
+		auto groupbox = new c_groupbox("Groupbox", vec2_t(30, 80), vec2_t(250, 200), 0);
 		{
 			window->add_groupbox(groupbox);
 			groupbox->add_control(new c_checkbox("Checkbox", &test_bool));
@@ -75,6 +79,12 @@ void c_silentgui::run()
 			groupbox->add_control(new c_checkbox("Checkbox 4", &test_bool4));
 			groupbox->add_control(new c_combobox("Combobox", &test_int, {"Item 1", "Item 2", "Item 3"}));
 			groupbox->add_control(new c_combobox("Combobox 2", &test_int2, { "Item 1", "Item 2", "Item 3" }));
+
+			auto multicombobox = new c_multicombobox("Multicombobox");
+			multicombobox->add_item("Item 1", &test_multi);
+			multicombobox->add_item("Item 2", &test_multi2);
+			multicombobox->add_item("Item 3", &test_multi3);
+			groupbox->add_control(multicombobox);
 		}
 	}
 

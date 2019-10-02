@@ -64,3 +64,14 @@ void c_groupbox::add_control(c_combobox* combobox)
 		menu_helpers::control_index++;
 	}
 }
+
+void c_groupbox::add_control(c_multicombobox* multicombobox)
+{
+	if (this->visible)
+	{
+		multicombobox->position = vec2_t(this->control_offset_x, this->control_offset_y);
+		multicombobox->run();
+		this->control_offset_y += 20;
+		menu_helpers::control_index++;
+	}
+}

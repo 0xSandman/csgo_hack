@@ -150,6 +150,7 @@
     <ClCompile Include="silentgui\controls\checkbox\checkbox.cc" />
     <ClCompile Include="silentgui\controls\combobox\combobox.cc" />
     <ClCompile Include="silentgui\controls\groupbox\groupbox.cc" />
+    <ClCompile Include="silentgui\controls\multi_combobox\multi_combobox.cc" />
     <ClCompile Include="silentgui\controls\slider\slider.cc" />
     <ClCompile Include="silentgui\controls\window\window.cc" />
     <ClCompile Include="silentgui\menu_helpers\menu_helpers.cc" />
@@ -168,6 +169,7 @@
     <ClInclude Include="silentgui\controls\checkbox\checkbox.hh" />
     <ClInclude Include="silentgui\controls\combobox\combobox.hh" />
     <ClInclude Include="silentgui\controls\groupbox\groupbox.hh" />
+    <ClInclude Include="silentgui\controls\multi_combobox\multi_combobox.hh" />
     <ClInclude Include="silentgui\controls\slider\slider.hh" />
     <ClInclude Include="silentgui\controls\window\window.hh" />
     <ClInclude Include="silentgui\menu_helpers\menu_helpers.hh" />

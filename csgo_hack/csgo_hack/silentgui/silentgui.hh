@@ -8,6 +8,7 @@
 #include "controls/checkbox/checkbox.hh"
 #include "controls/slider/slider.hh"
 #include "controls/combobox/combobox.hh"
+#include "controls/multi_combobox/multi_combobox.hh"
 
 class c_silentgui
 {
