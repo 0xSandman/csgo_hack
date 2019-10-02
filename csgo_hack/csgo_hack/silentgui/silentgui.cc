@@ -14,10 +14,14 @@ int main_window_selected_tab;
 bool test_bool;
 bool test_bool2;
 bool test_bool3;
+bool test_bool4;
+
 float test_float = 15;
 
 void c_silentgui::run()
 {
+	menu_helpers::handle_input();
+
 	if (GetAsyncKeyState(VK_INSERT) & 1)
 	{
 		menu_helpers::menu_open = !menu_helpers::menu_open;
@@ -39,7 +43,7 @@ void c_silentgui::run()
 			groupbox->add_control(new c_checkbox("Checkbox 2", &test_bool2));
 			groupbox->add_control(new c_checkbox("Checkbox 3", &test_bool3));
 			groupbox->add_control(new c_slider("Slider", &test_float));
-			groupbox->add_control(new c_checkbox("Checkbox 4", &test_bool2));
+			groupbox->add_control(new c_checkbox("Checkbox 4", &test_bool4));
 
 		}
 	}

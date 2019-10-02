@@ -17,7 +17,7 @@ c_checkbox::c_checkbox(std::string name, bool* value)
 
 void c_checkbox::run()
 {
-	if (menu_helpers::mouse_is_over_point(vec2_t(this->position.x, this->position.y), vec2_t(14, 14)) && GetAsyncKeyState(VK_LBUTTON) & 1)
+	if (menu_helpers::mouse_is_over_point(vec2_t(this->position.x, this->position.y), vec2_t(14, 14)) && menu_helpers::key_was_pressed(VK_LBUTTON))
 		* this->value = !*this->value;
 
 	render->rectangle(this->position.x, this->position.y, 14, 14, D3DCOLOR_RGBA(25, 25, 25, 255));

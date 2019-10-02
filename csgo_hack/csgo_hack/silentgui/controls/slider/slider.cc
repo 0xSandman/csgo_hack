@@ -26,7 +26,7 @@ void c_slider::run()
 	auto value_modifier = (value_min_delta / max_min_delta) * slider_size;
 	auto value_text_size = render->get_text_width(std::to_string((int)* this->value).c_str(), fonts::main_font);
 
-	if (GetAsyncKeyState(VK_LBUTTON) & 1 && menu_helpers::mouse_is_over_point(vec2_t(this->position.x, this->position.y + 2), vec2_t(slider_size, 8)))
+	if (menu_helpers::key_was_pressed(VK_LBUTTON) & 1 && menu_helpers::mouse_is_over_point(vec2_t(this->position.x, this->position.y + 2), vec2_t(slider_size, 8)))
 		stored_index = menu_helpers::control_index;
 
 	if (GetAsyncKeyState(VK_LBUTTON) && stored_index == menu_helpers::control_index)
