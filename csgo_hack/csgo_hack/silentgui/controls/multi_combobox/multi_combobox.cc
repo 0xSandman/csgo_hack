@@ -44,7 +44,7 @@ void c_multicombobox::run()
 			if (menu_helpers::key_was_pressed(VK_LBUTTON) && menu_helpers::mouse_is_over_point(vec2_t(this->position.x, this->position.y + 14 + (i * 14)), vec2_t(combobox_size, 14)))
 				*this->items[i].value = !*this->items[i].value;
 
-			text_to_draw.insert(text_to_draw.begin(), text_draw_t(this->position.x + (combobox_size / 2), this->position.y + 15 + (i * 14), fonts::main_font, this->items[i].name , *this->items[i].value ? D3DCOLOR_RGBA(150, 24, 27, 255) : D3DCOLOR_RGBA(255, 255, 255, 255), true));
+			text_to_draw.insert(text_to_draw.begin(), text_draw_t(this->position.x + 2, this->position.y + 15 + (i * 14), fonts::main_font, this->items[i].name , *this->items[i].value ? D3DCOLOR_RGBA(150, 24, 27, 255) : D3DCOLOR_RGBA(255, 255, 255, 255)));
 		}
 	}
 

@@ -49,7 +49,7 @@ void c_combobox::run()
 				stored_index = -1;
 			}
 
-			text_to_draw.insert(text_to_draw.begin(), text_draw_t(this->position.x + (combobox_size / 2), this->position.y + 15 + (i * 14), fonts::main_font, this->items[i], i == *this->value ? D3DCOLOR_RGBA(150, 24, 27, 255) : D3DCOLOR_RGBA(255, 255, 255, 255), true));
+			text_to_draw.insert(text_to_draw.begin(), text_draw_t(this->position.x + 2, this->position.y + 15 + (i * 14), fonts::main_font, this->items[i], i == *this->value ? D3DCOLOR_RGBA(150, 24, 27, 255) : D3DCOLOR_RGBA(255, 255, 255, 255)));
 		}
 	}
 }
