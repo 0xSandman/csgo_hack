@@ -44,7 +44,7 @@ void c_silentgui::run()
 {
 	menu_helpers::handle_input();
 
-	if (GetAsyncKeyState(VK_INSERT) & 1)
+	if (menu_helpers::key_was_pressed(VK_INSERT))
 	{
 		menu_helpers::menu_open = !menu_helpers::menu_open;
 		interfaces::input_system->enable_input(!menu_helpers::menu_open);
