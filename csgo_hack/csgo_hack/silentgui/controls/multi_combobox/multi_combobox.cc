@@ -67,7 +67,11 @@ void c_multicombobox::run()
 	auto text_size = render->get_text_width(display.c_str(), fonts::main_font);
 
 	if (this->position.x + 2 + text_size > this->position.x + combobox_size)
-		display.resize(11); // hardcode for now
+	{
+		display.resize(10); // hardcode for now
+		display.append("...");
+	}
+		
 
 	render->text(this->position.x + 2, this->position.y + 1, fonts::main_font, display, D3DCOLOR_RGBA(255, 255, 255, 255));
 }
