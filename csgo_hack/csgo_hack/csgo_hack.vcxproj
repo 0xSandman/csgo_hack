@@ -157,6 +157,7 @@
     <ClCompile Include="silentgui\silentgui.cc" />
     <ClCompile Include="source_development_kit\hooker\hooker.cc" />
     <ClCompile Include="source_development_kit\interfaces\interfaces.cc" />
+    <ClCompile Include="source_development_kit\math\math.cc" />
     <ClCompile Include="source_development_kit\memory\memory.cc" />
     <ClCompile Include="source_development_kit\utilities\utilities.cc" />
   </ItemGroup>
@@ -176,7 +177,10 @@
     <ClInclude Include="silentgui\silentgui.hh" />
     <ClInclude Include="source_development_kit\hooker\hooker.hh" />
     <ClInclude Include="source_development_kit\interfaces\interfaces.hh" />
+    <ClInclude Include="source_development_kit\math\math.hh" />
+    <ClInclude Include="source_development_kit\math\matrix\matrix3x4.hh" />
     <ClInclude Include="source_development_kit\math\vector\vector2d.hh" />
+    <ClInclude Include="source_development_kit\math\vector\vector3d.hh" />
     <ClInclude Include="source_development_kit\memory\memory.hh" />
     <ClInclude Include="source_development_kit\source_development_kit.hh" />
     <ClInclude Include="source_development_kit\utilities\utilities.hh" />

@@ -11,6 +11,9 @@
 
 #include "../console/console.hh"
 #include "../source_development_kit/math/vector/vector2d.hh"
+#include "../source_development_kit/math/vector/vector3d.hh"
+#include "../source_development_kit/math/matrix/matrix3x4.hh"
+#include "../source_development_kit/math/math.hh"
 #include "../render/fonts/fonts.hh"
 #include "../render/render.hh"
 #include "../source_development_kit/utilities/utilities.hh"
