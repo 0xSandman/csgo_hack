@@ -15,19 +15,12 @@ vec2_t window_position = vec2_t(800, 200);
 std::vector<std::string> tabs = { "Aimbot", "Visuals", "Misc" };
 int main_window_selected_tab;
 
-bool test_bool;
-bool test_bool2;
-bool test_bool3;
-bool test_bool4;
-
-float test_float = 15;
-
-int test_int;
-int test_int2;
-
-bool test_multi;
-bool test_multi2;
-bool test_multi3;
+enum tab_list_t
+{
+	aimbot_tab = 0,
+	visuals_tab,
+	misc_tab
+};
 
 void c_silentgui::handle_vector_drawing()
 {
@@ -69,23 +62,6 @@ void c_silentgui::run()
 
 	auto window = new c_window("xyo (hex editing this is a federal crime, punishable by firing squad)", &window_position, vec2_t(500, 350), tabs, &main_window_selected_tab);
 	{
-		auto groupbox = new c_groupbox("Groupbox", vec2_t(30, 80), vec2_t(250, 200), 0);
-		{
-			window->add_groupbox(groupbox);
-			groupbox->add_control(new c_checkbox("Checkbox", &test_bool));
-			groupbox->add_control(new c_checkbox("Checkbox 2", &test_bool2));
-			groupbox->add_control(new c_checkbox("Checkbox 3", &test_bool3));
-			groupbox->add_control(new c_slider("Slider", &test_float));
-			groupbox->add_control(new c_checkbox("Checkbox 4", &test_bool4));
-			groupbox->add_control(new c_combobox("Combobox", &test_int, {"Item 1", "Item 2", "Item 3"}));
-			groupbox->add_control(new c_combobox("Combobox 2", &test_int2, { "Item 1", "Item 2", "Item 3" }));
-
-			auto multicombobox = new c_multicombobox("Multicombobox");
-			multicombobox->add_item("Item 1", &test_multi);
-			multicombobox->add_item("Item 2", &test_multi2);
-			multicombobox->add_item("Item 3", &test_multi3);
-			groupbox->add_control(multicombobox);
-		}
 	}
 
 	this->handle_vector_drawing();
