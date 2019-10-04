@@ -184,10 +184,10 @@
     <ClInclude Include="source_development_kit\memory\memory.hh" />
     <ClInclude Include="source_development_kit\source_development_kit.hh" />
     <ClInclude Include="source_development_kit\utilities\utilities.hh" />
-    <ClInclude Include="source_development_kit\valve\c_base_entity.h" />
+    <ClInclude Include="source_development_kit\valve\c_base_entity.hh" />
     <ClInclude Include="source_development_kit\valve\c_client.hh" />
     <ClInclude Include="source_development_kit\valve\iv_engine_client.hh" />
-    <ClInclude Include="source_development_kit\valve\i_client_entity_list.h" />
+    <ClInclude Include="source_development_kit\valve\i_client_entity_list.hh" />
     <ClInclude Include="source_development_kit\valve\i_input_system.hh" />
     <ClInclude Include="source_development_kit\valve\i_surface.hh" />
     <ClInclude Include="source_development_kit\valve\recv.hh" />

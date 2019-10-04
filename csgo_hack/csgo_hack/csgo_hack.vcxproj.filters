@@ -164,10 +164,10 @@
     <ClInclude Include="source_development_kit\math\matrix\matrix3x4.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="source_development_kit\valve\c_base_entity.h">
+    <ClInclude Include="source_development_kit\valve\c_base_entity.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="source_development_kit\valve\i_client_entity_list.h">
+    <ClInclude Include="source_development_kit\valve\i_client_entity_list.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
