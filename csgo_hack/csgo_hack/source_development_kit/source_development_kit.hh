@@ -25,6 +25,7 @@
 #include "valve/iv_engine_client.hh"
 #include "valve/i_input_system.hh"
 #include "valve/i_surface.hh"
+#include "valve/iv_debug_overlay.hh"
 #include "interfaces/interfaces.hh"
 #include "hooker/hooker.hh"
 #include "memory/memory.hh"

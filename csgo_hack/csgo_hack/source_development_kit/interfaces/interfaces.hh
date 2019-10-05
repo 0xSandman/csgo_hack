@@ -6,5 +6,6 @@ namespace interfaces
 	extern valve::i_input_system* input_system;
 	extern valve::i_surface* surface;
 	extern valve::i_client_entity_list* entity_list;
+	extern valve::iv_debug_overlay* debug_overlay;
 	extern DWORD d3d9_device;
 }

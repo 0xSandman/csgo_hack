@@ -186,6 +186,7 @@
     <ClInclude Include="source_development_kit\utilities\utilities.hh" />
     <ClInclude Include="source_development_kit\valve\c_base_entity.hh" />
     <ClInclude Include="source_development_kit\valve\c_client.hh" />
+    <ClInclude Include="source_development_kit\valve\iv_debug_overlay.hh" />
     <ClInclude Include="source_development_kit\valve\iv_engine_client.hh" />
     <ClInclude Include="source_development_kit\valve\i_client_entity_list.hh" />
     <ClInclude Include="source_development_kit\valve\i_input_system.hh" />

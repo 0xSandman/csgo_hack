@@ -170,5 +170,8 @@
     <ClInclude Include="source_development_kit\valve\i_client_entity_list.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source_development_kit\valve\iv_debug_overlay.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
