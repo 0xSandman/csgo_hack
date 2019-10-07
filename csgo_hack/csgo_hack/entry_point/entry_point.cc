@@ -27,7 +27,7 @@ BOOL WINAPI DllMain( _In_ HINSTANCE instance, _In_ DWORD reason, _In_ LPVOID res
 {
 	switch ( reason )
 	{
-	case DLL_PROCESS_ATTACH:  CreateThread( 0, 0, start_hack, instance, 0, 0 ); break;
+	case DLL_PROCESS_ATTACH: if ( auto handle = CreateThread( 0, 0, start_hack, instance, 0, 0 ) ) CloseHandle( handle ); break;
 	}
 
 	return TRUE;
